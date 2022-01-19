@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/lato/Lato-Regular.ttf) format('truetype');
+}
+header{
+  height: 841px;
+}
+.header{
+  height: 100%;
+  background-image: url('../images/banner1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-row{
+  height: 100px;
+  padding: 30px 30px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.row-logo{
+  padding: 0 15px;
+}
+.row-menu{
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+.row-menu-list{
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Lato';
+  text-transform: uppercase;
+}
+.row-menu-list li{
+  padding: 0 25px;
+  
+}
+.row-menu-list li a{
+  color: #fff;
+}
+a{
+    text-decoration: none;
+}
