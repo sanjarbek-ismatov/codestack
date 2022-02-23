@@ -60,6 +60,7 @@ nav {
   display: flex;
   list-style: none;
 }
+
 .nav-ul li {
   padding: 12px 30px;
   font-size: 25px;
@@ -195,7 +196,7 @@ main {
     width: 300px;
     margin: auto;
   }
-  .grid{
+  .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
