@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="./aos-master/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="./aos-master/dist/aos.css" rel="stylesheet" /> -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,7 +40,8 @@
     });
   </script>
   <body>
-    <nav>
+   
+    <nav  data-aos='fade-down' data-aos-easing='easy'>
       <img class="logo-image" id="logo" src="./images/logo.png" />
       <ul id="ul" class="nav-ul">
         <li><a href="#course">Kurslarimiz</a></li>
@@ -54,7 +56,7 @@
     </nav>
     <header id="header">
       <div class="header">
-        <section>
+        <section  data-aos='zoom-in'>
           <div class="section">
             <div class="get-start">
               <p>Dasturlashni CodeStackda o'rganing!</p>
@@ -68,7 +70,7 @@
       </div>
     </header>
     <main>
-      <div class="main">
+      <div class="main" data-aos='fade-up'>
         <div class="main-about" id="about">
           <p>Biz haqimizda</p>
         </div>
@@ -110,7 +112,7 @@
             </p>
           </div>
         </div>
-        <div class="courses" id="course">
+        <div class="courses" id="course" data-aos='fade-up'>
           <p class="courses-p">Bizning kurslarimiz</p>
           <div class="grid">
             <div class="grid-container">
@@ -151,8 +153,9 @@
       </div>
     </main>
     <script src="./js/app.js"></script>
-    <script src="./aos-master/dist/aos.js">
-      AOS.init();
+   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+      
     </script>
+    <script type="text/javascript">AOS.init();</script>
   </body>
 </html>
