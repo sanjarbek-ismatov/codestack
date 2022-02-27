@@ -1,15 +1,20 @@
-const menu = document.getElementById('menu');
-const navigation = document.getElementById('ul');
-navigation.style.display = 'flex';
-let windows = window.matchMedia('(max-width: 1000px)')
-if(windows.matches){
-    navigation.style.display = 'none'
-}
-
+const menu = document.getElementById("menu");
+const navigation = document.getElementById("ul");
+const buttons = document.querySelectorAll("#a");
+const logo = document.getElementById("logo");
 const show = () => {
-    console.log(navigation.style.display)
-    navigation.style.display === 'none' ? navigation.style.display =  'block' : navigation.style.display =  'none';
-}
-
-
-menu.addEventListener('click', show);
+  if (navigation.className === "nav-ul") {
+    navigation.className += " responsive";
+    logo.className += " logo-image-top";
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].className = "a";
+    }
+  } else {
+    logo.className = "logo-image";
+    navigation.className = "nav-ul";
+    for (let d = 0; d < buttons.length; d++) {
+      buttons[d].className = "";
+    }
+  }
+};
+menu.addEventListener("click", show);
