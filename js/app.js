@@ -17,4 +17,13 @@ const show = () => {
     }
   }
 };
+const media = window.matchMedia("(min-width: 1000px)");
+const mediaFunction = () => {
+  if (media.matches) {
+    navigation.className = "nav-ul not-responsive";
+  } else {
+    navigation.className = "nav-ul";
+  }
+};
+media.addListener(mediaFunction);
 menu.addEventListener("click", show);

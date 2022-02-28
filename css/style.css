@@ -102,6 +102,9 @@ nav {
   display: block;
   padding: 100px 0;
 }
+.nav-ul .not-repsonsive {
+  display: flex;
+}
 section {
   padding-top: 62px;
 }
