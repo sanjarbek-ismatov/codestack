@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <link href="./aos-master/dist/aos.css" rel="stylesheet" /> -->
-    <link href="./aos-master/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,14 +40,8 @@
   </script>
   <body>
     <nav>
-      <img
-        data-aos="fade-down"
-        data-aos-easing="easy"
-        class="logo-image"
-        id="logo"
-        src="./images/logo.png"
-      />
-      <ul data-aos="fade-down" data-aos-easing="easy" id="ul" class="nav-ul">
+      <img class="logo-image" id="logo" src="./images/logo.png" />
+      <ul id="ul" class="nav-ul">
         <li><a href="#course">Kurslarimiz</a></li>
         <li><a href="#about">Biz haqimizda</a></li>
         <li><a href="#">Kontakt</a></li>
@@ -155,6 +148,8 @@
         <div class="contact">
           <div>
             <input type="text" name="first-name" placeholder="Ismingiz" />
+          </div>
+          <div>
             <input type="text" name="last-name" placeholder="Familyangiz" />
           </div>
           <div>
@@ -167,9 +162,17 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer">
+        <p>
+          Barcha huquqlar himoyalangan! <br />
+          Sanjarbek Ismatov 2021 &copy;
+        </p>
+      </div>
+    </footer>
     <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="./aos-master/dist/aos.js"></script>
     <script type="text/javascript">
       AOS.init();
     </script>
