@@ -17,7 +17,7 @@
 }
 .logo-image {
   height: auto;
-  width: 100px;
+  width: 70px;
   cursor: pointer;
   z-index: 6;
 }
@@ -265,6 +265,7 @@ footer {
     padding-top: 10rem;
     position: absolute;
     left: 0;
+    width: 80px;
   }
 }
 @media only screen and (max-width: 800px) {
