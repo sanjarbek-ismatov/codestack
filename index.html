@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./aos-master/dist/aos.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,42 +9,15 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/logo.png" />
   </head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on("click", function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            }
-          );
-        } // End if
-      });
-    });
-  </script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/anim.js"></script>
   <body>
     <nav>
       <img class="logo-image" id="logo" src="./images/logo.png" />
       <ul id="ul" class="nav-ul">
         <li><a href="#course">Kurslarimiz</a></li>
         <li><a href="#about">Biz haqimizda</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
       <div id="menu" class="menu">
         <div id="a"></div>
@@ -145,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
           <div>
             <input type="text" name="first-name" placeholder="Ismingiz" />
           </div>
@@ -164,14 +137,13 @@
     </main>
     <footer>
       <div class="footer">
-        <p>
-          Barcha huquqlar himoyalangan! <br />
-          Sanjarbek Ismatov 2021 &copy;
-        </p>
+        <p id="copyright">Barcha huquqlar himoyalangan! <br /></p>
       </div>
     </footer>
+
     <script src="./js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./aos-master/dist/aos.js"></script>
 
     <script type="text/javascript">
       AOS.init();

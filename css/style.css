@@ -4,8 +4,8 @@
   margin: 0;
 }
 ::selection {
-  background-color: #796dbb;
-  color: #17161d;
+  background-color: #837121;
+  color: #ffffff;
 }
 @font-face {
   font-family: "Lato";
@@ -50,9 +50,7 @@ nav {
 .menu div {
   transition-duration: 0.5s;
 }
-.menu:hover {
-  background-color: #2b2933;
-}
+
 .a {
   position: relative;
 }
@@ -62,6 +60,7 @@ nav {
 }
 .a:nth-child(2) {
   opacity: 0;
+  transition-duration: 0s;
 }
 .a:nth-child(3) {
   transform: rotate(-45deg);
@@ -107,12 +106,16 @@ nav {
 }
 section {
   padding-top: 62px;
+  width: 100%;
 }
 .get-start {
   color: #d6d6d6;
-  line-height: 100px;
   padding-top: 100px;
   font-size: 30px;
+  text-align: center;
+}
+.get-start p {
+  margin: 40px auto;
 }
 .get-start a {
   text-decoration: none;
@@ -142,7 +145,6 @@ main {
   padding: 0 50px;
   justify-content: center;
   border: 5px double #c4c4c7;
-  margin: 0 50px;
 }
 .child-container {
   width: 270px;
@@ -253,7 +255,7 @@ footer {
     left: 0;
   }
   .nav-ul li {
-    width: 300px;
+    width: 220px;
     margin: auto;
   }
   .grid {
@@ -261,6 +263,8 @@ footer {
   }
   .logo-image-top {
     padding-top: 10rem;
+    position: absolute;
+    left: 0;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -278,5 +282,10 @@ footer {
   }
   .contact input[type="text"] {
     max-width: 70%;
+  }
+  .get-strt-img img {
+    width: 100%;
+    padding: 0px 50px;
+    height: auto;
   }
 }
