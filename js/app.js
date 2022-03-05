@@ -10,7 +10,14 @@ function clock() {
   const date = new Date();
   data.innerHTML = `${date.toDateString()} <br> ${date.toLocaleTimeString()} <br> Sanjarbek Ismatov ${date.getFullYear()} &copy`;
 }
-
+const wtf = () => {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementsByTagName("nav")[0].className = "nav";
+  } else {
+    document.getElementsByTagName("nav")[0].className = "";
+  }
+};
+window.onscroll = wtf;
 const show = () => {
   if (navigation.className === "nav-ul") {
     navigation.className += " responsive";
