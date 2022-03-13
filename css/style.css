@@ -26,6 +26,9 @@ header {
   height: 757px;
   background-color: #17161d;
 }
+.fixed {
+  position: absolute;
+}
 nav {
   transition-duration: 0.5s;
   font-family: "lato";
@@ -80,6 +83,8 @@ nav {
 }
 .nav {
   height: 70px;
+  background-color: #00000094;
+  backdrop-filter: blur(10px);
 }
 
 .nav-ul li {
