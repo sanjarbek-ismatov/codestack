@@ -13,8 +13,10 @@ function clock() {
 const wtf = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementsByTagName("nav")[0].className = "nav";
+    document.getElementsByClassName("not-fixed")[0].className = "fixed";
   } else {
     document.getElementsByTagName("nav")[0].className = "";
+    document.getElementsByClassName("fixed")[0].className = "not-fixed";
   }
 };
 window.onscroll = wtf;

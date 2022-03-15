@@ -27,7 +27,23 @@ header {
   background-color: #17161d;
 }
 .fixed {
-  position: absolute;
+  display: block;
+  position: fixed;
+  z-index: 7;
+  padding: 10px 12px;
+  border: 1px solid rgb(179, 178, 178);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 2px rgb(126, 123, 123);
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+}
+.fixed img {
+  height: 25px;
+  width: 25px;
+}
+.not-fixed {
+  display: none;
 }
 nav {
   transition-duration: 0.5s;
@@ -41,7 +57,7 @@ nav {
   width: 100%;
   top: 0;
   background-color: #17161d;
-  filter: drop-shadow(4px 1px 1px #22202b);
+  filter: drop-shadow(0px 1px 1px #22202b);
   z-index: 5;
 }
 .menu {
@@ -86,6 +102,12 @@ nav {
   background-color: #00000094;
   backdrop-filter: blur(10px);
 }
+.nav .nav-ul li {
+  padding: 20px 30px;
+}
+.nav .nav-ul li:hover {
+  background-color: #000;
+}
 
 .nav-ul li {
   padding: 12px 30px;
@@ -109,7 +131,10 @@ nav {
 .nav-ul.responsive {
   display: block;
   padding: 47px 0;
+  background-color: #00000094;
+  backdrop-filter: blur(10px);
 }
+
 .nav-ul .not-repsonsive {
   display: flex;
 }
@@ -211,6 +236,7 @@ main {
   padding: 20px 0;
 }
 .grid-container:hover {
+  border-radius: 10px;
   transform: translate(0px, -10px);
   box-shadow: 0px 10px 10px 0.5px rgb(153, 153, 153);
 }
@@ -225,6 +251,10 @@ main {
   border-radius: 19px;
   border: 2px solid #b1b1b1;
   padding: 12px 13px;
+  transition: 0.5s ease;
+}
+.contact input[type="text"]:focus {
+  width: 600px;
 }
 .contact input[type="submit"] {
   padding: 13px 36px;
@@ -233,10 +263,11 @@ main {
   color: #fff;
   border-radius: 9px 21px 0px 17px;
   cursor: pointer;
-  transition-duration: 0.2s;
+  transition-duration: 1s;
 }
 .contact input[type="submit"]:hover {
   background-color: #636363;
+  transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
 }
 .contact input[type="submit"]:active {
   transform: scale(1.1);
@@ -248,7 +279,9 @@ footer {
   background-color: #121010;
   color: #adadad;
 }
-
+#typed-strings {
+  width: 400px;
+}
 @media only screen and (max-width: 1000px) {
   .menu {
     visibility: visible;
@@ -282,6 +315,9 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
   }
+  #typed-strings {
+    width: 100%;
+  }
   .grid-container {
     width: 80vw;
     margin: auto;
@@ -295,7 +331,10 @@ footer {
   }
   .get-strt-img img {
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 10px;
     height: auto;
+  }
+  .get-start {
+    padding-top: 30px;
   }
 }

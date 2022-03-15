@@ -4,6 +4,7 @@
     <link href="./aos-master/dist/aos.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dasturlash kurslari | CodeStack</title>
     <link rel="stylesheet" href="./css/style.css" />
@@ -12,9 +13,13 @@
   <script src="./js/jquery.js"></script>
   <script src="./js/anim.js"></script>
   <body>
-    <div class="fixed"></div>
+    <a href="#header" class="not-fixed">
+      <img src="./images/icon.png" />
+    </a>
     <nav>
-      <img class="logo-image" id="logo" src="./images/logo.png" />
+      <a href="#header">
+        <img class="logo-image" id="logo" src="./images/logo.png" />
+      </a>
       <ul id="ul" class="nav-ul">
         <li><a href="#course">Kurslarimiz</a></li>
         <li><a href="#about">Biz haqimizda</a></li>
@@ -30,13 +35,16 @@
       <div class="header">
         <section>
           <div class="section">
-            <div class="get-start" data-aos="zoom-in" data-aos-duration="1000">
-              <p>Dasturlashni CodeStackda o'rganing!</p>
+            <div class="get-start" data-aos="fade-up" data-aos-duration="1000">
+              <p id="typed-strings">
+                <span id="typed"></span>
+              </p>
+
               <a href="#">Boshlash</a>
             </div>
             <div class="get-strt-img">
               <img
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1200"
                 data-aos-easing="easy"
                 src="./images/computer-programming.jpg"
@@ -119,7 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="contact" id="contact">
+        <div class="contact" id="contact" data-aos="fade-up">
           <div>
             <input type="text" name="first-name" placeholder="Ismingiz" />
           </div>
@@ -151,5 +159,18 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/typed.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed("#typed", {
+        strings: [
+          "Dasturlashni CodeStackda o'rganing!",
+          "Bizda Pythonni o'rganing!",
+          "Javascript kursi siz uchun!",
+          "Javascript Frameworklarini o'rganing!",
+        ],
+        backSpeed: 30,
+        typeSpeed: 30,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
