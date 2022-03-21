@@ -11,7 +11,10 @@ function clock() {
   data.innerHTML = `${date.toDateString()} <br> ${date.toLocaleTimeString()} <br> Sanjarbek Ismatov ${date.getFullYear()} &copy`;
 }
 const wtf = () => {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     document.getElementsByTagName("nav")[0].className = "nav";
     document.getElementsByClassName("not-fixed")[0].className = "fixed";
   } else {
